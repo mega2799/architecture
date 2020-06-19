@@ -1,16 +1,3 @@
-/*******************************************************************************
-*                                                                              *
-*                   Architetture dei sistemi di Elaborazione                   *
-*                                                                              *
-********************************************************************************
-
-Elaborato 3
-Descrizione: Data una sequenza di bit, restituire la lunghezza media (arrotondata
-			 all’intero più vicino), minima e massima delle sotto-sequenze di
-			 bit (contigui) a 0 e a 1.
-
-********************************************************************************/
-
 #include <stdio.h>
 
 void main()
@@ -64,11 +51,11 @@ void main()
 		
 		////////////////////////////////////
 		//	label1: ciclo che controlla il byte ed anche tutto l'array 
-		//	label0: tabella nel caso in cui il bit è 0 
+		//	label0: tabella nel caso in cui il bit Ã¨ 0 
 		//	label2: tabella che controlla la fine dell'array/byte 
 		//	label_max_min: tabella che controlla i massimi 
 		//	got_n: tabelle che gestiscono la conta delle sotto sequenze, con la sentinella 
-		//	label3: tabella che gestiràle sotto sqeunze
+		//	label3: tabella che gestirÃ le sotto sqeunze
 		//	label4: gestisce casi in cui ci sono solo 0 e 1 
 		//	no_sub_min: non ce nessuna sotto seq minore 
 		//	no_sub_min_0: non ce nessuna sotto seq minore con 0 
@@ -113,7 +100,7 @@ void main()
 		je got_1 
 		inc [esp+12]	//cnt sotto seq di 1	//se vengono eseguite prima avevo 0 
 		mov [esp-4],1		//sentinella = 1 		//se vengono eseguite prima avevo 0 
-		mov eax, [esp+4]	//ho avuto una seq di zeri, è la minore ?
+		mov eax, [esp+4]	//ho avuto una seq di zeri, Ã¨ la minore ?
 		mov bx, minLungSeq0
 		cmp eax, 0	//caso in cui ho appena inziato a contare
 		je got_1
@@ -135,7 +122,7 @@ void main()
 		je got_0
 		inc [esp+16]	//sotto seq di 0 ++
 		mov [esp-4],0
-		mov bx, minLungSeq1	//ho avuto una sequenza di 1, è la minore ?
+		mov bx, minLungSeq1	//ho avuto una sequenza di 1, Ã¨ la minore ?
 		mov eax, [esp]
 		cmp eax,0	//caso in cui ho appena inziato a contare
 		je got_0 
@@ -156,7 +143,7 @@ void main()
 		je label3
 		dec esi 
 		cmp esi,0	//controllato tutto il byte ?
-		je label1	//sì, percio passa al successivo 
+		je label1	//sÃ¬, percio passa al successivo 
 		jmp label_max_min //no, percio continua 
 
 		//controllo che l ultimo bit non generi un'altra sottosequenza
@@ -168,14 +155,14 @@ void main()
 		mov ebx,[esp]
 		cmp ebx,eax		//cnt > min_1 
 		jge no_sub_min
-		mov minLungSeq1,bx	//allora la minore è l'ultima sotto sequenza
+		mov minLungSeq1,bx	//allora la minore Ã¨ l'ultima sotto sequenza
 		jmp real_0 
 		no_sub_min:
 		cmp cx,0
 		je real_0 
 		inc [esp+12]	
 		real_0:
-		cmp[esp-4],0	//ultimo bit è 0 ?
+		cmp[esp-4],0	//ultimo bit Ã¨ 0 ?
 		jne label4		//no,percio jumpo ai casi speciali 
 		mov ax,minLungSeq0
 		mov ebx,[esp+4]
