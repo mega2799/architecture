@@ -1,23 +1,3 @@
-/*******************************************************************************
-*                                                                              *
-*                   Architetture dei sistemi di Elaborazione                   *
-*                                                                              *
-********************************************************************************
-
-Elaborato 2
-Descrizione: Dato un insieme di n punti m-dimensionali, scomporre in fattori
-			 primi il prodotto degli indici del punto più vicino e di quello
-			 più lontano rispetto a un punto p.
-
-Note:
-- I valori delle coordinate dei vari punti sono compresi nell’intervallo
-  [-100;100].
-- Per trovare la distanza minima e massima non è necessario calcolare la
-  radice quadrata.
-- I fattori primi devono essere riportati nell'array in ordine crescente.
-
-********************************************************************************/
-
 #include <stdio.h>
 
 void main()
@@ -56,10 +36,10 @@ short pointset []= { 45,-45,15,-30,76,32,25,63,32,-27,-81,-15,28,-74,-97 };
 	unsigned int numbers = sizeof(pointset) / sizeof(pointset[0]);
 
 	// Output
-	unsigned short indiceMin; 	//Indice del punto più vicino a p
-	unsigned short indiceMax; 	//Indice del punto più lontano da p
-	unsigned int prodotto; 		//Prodotto degli indici del punto più vicino e del punto
-									//più lontano
+	unsigned short indiceMin; 	//Indice del punto piÃ¹ vicino a p
+	unsigned short indiceMax; 	//Indice del punto piÃ¹ lontano da p
+	unsigned int prodotto; 		//Prodotto degli indici del punto piÃ¹ vicino e del punto
+									//piÃ¹ lontano
 	unsigned int fattori[100];	//Fattori primi trovati
 	unsigned int numFattori;	// Numero dei fattori trovati
 
@@ -75,8 +55,8 @@ short pointset []= { 45,-45,15,-30,76,32,25,63,32,-27,-81,-15,28,-74,-97 };
 	xor edi,edi
 	push 0         		//esp piu lontano 
 	push 0				//esp+4 indice max 
-	push 99999			//esp+8 più vicino
-	push 0            	//esp+12 indice più vicino
+	push 99999			//esp+8 piÃ¹ vicino
+	push 0            	//esp+12 indice piÃ¹ vicino
 	push 0				
 
 	xor esi,esi 
@@ -93,7 +73,7 @@ short pointset []= { 45,-45,15,-30,76,32,25,63,32,-27,-81,-15,28,-74,-97 };
 		inc esi 
 		sub dx, ax				    // x-x_1-x_2......
 		imul dx, dx
-		add edi,edx					//edi è sqrt(edi)
+		add edi,edx					//edi Ã¨ sqrt(edi)
 		cmp ecx,m
 		jne ciclo
 
