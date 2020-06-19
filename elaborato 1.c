@@ -1,3 +1,27 @@
+*******************************************************************************
+*                                                                              *
+*                   Architetture dei sistemi di Elaborazione                   *
+*                                                                              *
+********************************************************************************
+
+Elaborato 1
+
+Descrizione: Data una stringa C (terminata dal carattere nullo), contenente una
+			 frase (ossia parole separate da spazi e/o segni di punteggiatura),
+			 trovare al suo interno la parola pi√π lunga e successivamente
+			 cifrare/decifrare un testo con il cifrario di Vigen√®re, usando come
+			 chiave la parola trovata.
+
+Note:
+- In caso di parole di uguale lunghezza, considerare la prima da sinistra.
+- La parola pi√π lunga va copiata in un array di caratteri come stringa C
+  (terminata dal carattere nullo).
+- I segni di punteggiatura da considerare sono: ".,;:'?!"
+- Nel testo cifrato il codice ASCII di ogni carattere √® aumentato del codice ASCII
+  del corrispondente carattere nella parola chiave sovrapposta (e ripetuta se
+  necessario) al testo.
+
+********************************************************************************/
 #include <stdio.h>
 
 
@@ -12,7 +36,7 @@ void main()
 	char decifra = 0; // 0 = cifra; 1 = decifra
 
 	// Output
-	char parolaMax[100];	//La parola pi˘ lunga
+	char parolaMax[100];	//La parola pi√π lunga
 	char risultato[1024]; 	//Il testo cifrato/decifrato
 
 	// Blocco assembler
@@ -26,8 +50,8 @@ void main()
 		//////////////////////////////
 
 		//label2: controllo carattere valido 
-		//lavbel3: caso in cui il carattere Ë valido 
-		//label4: caso in cui il carattere non Ë valido
+		//lavbel3: caso in cui il carattere √® valido 
+		//label4: caso in cui il carattere non √® valido
 		//label5: controllato intera stringa
 		//label6: utile per la codifica 
 		//label7: utile per la decodifica 
@@ -117,9 +141,9 @@ void main()
 		////////
 		cmp edx, ecx
 		jge continua_0					
-		mov ebx, eax		//non basta rivedere progetto di l‡
-		mov edx, ecx		//non basta rivedere progetto di l‡
-		sub ebx, ecx		//non basta rivedere progetto di l‡			inizio parola pi˘ lunga
+		mov ebx, eax		//non basta rivedere progetto di l√†
+		mov edx, ecx		//non basta rivedere progetto di l√†
+		sub ebx, ecx		//non basta rivedere progetto di l√†			inizio parola pi√π lunga
 		continua_0:
 		//////
 		mov ecx, edx
