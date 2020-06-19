@@ -1,27 +1,3 @@
-*******************************************************************************
-*                                                                              *
-*                   Architetture dei sistemi di Elaborazione                   *
-*                                                                              *
-********************************************************************************
-
-Elaborato 1
-
-Descrizione: Data una stringa C (terminata dal carattere nullo), contenente una
-			 frase (ossia parole separate da spazi e/o segni di punteggiatura),
-			 trovare al suo interno la parola più lunga e successivamente
-			 cifrare/decifrare un testo con il cifrario di Vigenère, usando come
-			 chiave la parola trovata.
-
-Note:
-- In caso di parole di uguale lunghezza, considerare la prima da sinistra.
-- La parola più lunga va copiata in un array di caratteri come stringa C
-  (terminata dal carattere nullo).
-- I segni di punteggiatura da considerare sono: ".,;:'?!"
-- Nel testo cifrato il codice ASCII di ogni carattere è aumentato del codice ASCII
-  del corrispondente carattere nella parola chiave sovrapposta (e ripetuta se
-  necessario) al testo.
-
-********************************************************************************/
 #include <stdio.h>
 
 
