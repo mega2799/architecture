@@ -39,7 +39,6 @@ probabilmente da esadecimale a decimale in IEEE754
 è un numero maggiore di 1 (and e not sono operatori bit a bit). Si scriva la tabella di verità di F, 
 quindi si determini e si semplifichi la corrispondente espressione booleana.
 
-23/06/2020
 - Si consideri una CPU in grado di eseguire un programma P in 200ns. In una versione più evoluta della stessa CPU sono state accelerate alcune istruzioni di un fattore a: 
 tale nuova CPU è in grado di eseguire P in 150ns. 
 Sapendo che il fattore di accelerazione è a=2, si calcoli la percentuale di istruzioni accelerate p rispetto al totale di quelle contenute nel programma P.
@@ -73,7 +72,6 @@ Sapendo che il tempo totale di lettura delle parole è di 1230ns, determinare il
 - Si converta in base 10 il numero rappresentato in formato IEEE754 singola precisione da: 
 43800000h
 
-25 Giugno
 - Siano A = (a1 a0) e B = (b1 b0) due numeri binari (con a1 e b1 bit più significativi); si consideri la funzione booleana F(A,B) che è vera se (A-B) è un numero positivo e primo. 
 Si scriva la tabella di verità di F e si determini la corrispondente espressione booleana
 
