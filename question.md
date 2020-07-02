@@ -138,5 +138,41 @@ Domande
 - Che cos'è la codifica dei caratteri UNICODE e per quale motivo è stata introdotta?
 - Cosa si intende con il termine 'maschera di bit' e in quali casi può essere utile?
 - Cosa si intende per località spaziale e località temporale in una memoria Cache?
-
-
+- differenza tra compilatore/assemblatore
+- frequenza di campionamento dei CD
+- DMA
+- cache
+- i bit per quantizzazione quanti sono? un byte o due? (16 bit per canale su due canali) 
+- Cosa succede se al registro AL che contiene il numero 250 viene sommato 10? Qual è il nuovo valore di AL?
+- Perché l'usb si può definire bus?
+- In base a cosa una CPU è più potente di un'altra?
+- Cos'è un multiplexer e a cosa può servire?
+- Complemento a due
+- unicode e ASCII
+-  fetch decode ed execute
+- eflags
+- differenza fra little endian e big endian
+- le espressioni booleane sono isomorfe ai circuiti digitali. Cosa significa?
+-  ho un disco magnetico e dram per leggere delle parole. In che ordine di grandezza siamo? (decine di millisecondi per HD e una o due decine di nanosecondi per la dram)
+- tassonomia di Flinn
+- i tipi di RAM
+- flip flop
+- pipeline
+- che cosa si intende con canale nell’ambito del PCI-express
+- tipi di rom
+- tipi di ram
+- motivo dell'uso dei floating point
+- generazioni dei calcolatori
+- ordini di grandezza nei tempi di lettura delle memorie e hard disk
+- cos'è una unità floating point
+- come funziona un hard disk
+- quante configurazioni con n bit e intervalli rappresentabili nelle diverse codifiche
+- parallelismo nel chip
+- architetture non x86 server
+- clock\periodo di clock\frequenza di clock
+- distanza di hamming e uso per identificare\correggere errori
+- Legge di Moore
+- localià spaziale e temporale
+- fotolitografia
+- quali sono i 3 diversi tipi di rappresentazione di numeri con segno? (grandezza e segno, c omplemento a 2, eccesso 2^(m-1))
+ 
