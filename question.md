@@ -93,18 +93,18 @@ calcolare quanto dovrebbe essere il fattore di accelerazione della nuova unità 
 
 Domande 
 ----
-
-- differenza fra PCI e PCI Express
-- L'onda quadra in figura è il segnale di clock di un calcolatore. Indicare la frequenza di lavoro del sistema in KHz (il risultato può essere indicato in forma frazionaria): 15 gennaio 2020
-- Descrivere le principali caratteristiche dell’interfaccia USB.
 - Descrivere le principali caratteristiche del bus USB.
+L' universal serial bus è nato per soddisfare alcune esigenze, la necessita di collegare una periferica senza dover smontare parti/porte del calcolatore, poter collegare/scollegare un device senza dover riavviare il calcolatore, poter alimentare un device tramite questo bus, la necessita di un live enviroment, un collegamento economico, poter collegare fino a 127 dispositivi. L' usb opera ad alta velocità consiste in 4 line, 2 alimentazione 2 dati alle quali nella versione 3.0 si aggiungeranno altri 5 linee dati 
 - Descrivere brevemente le principali rappresentazioni dei numeri negativi nell’aritmetica binaria.
-- Data la seguente rete di connessioni tra processori si indichi Diametro, Fan out minimo, Fan out massimo 2010/09/09
+I numeri negativi possono essere rappresentati tramite il complemento a 2 : prendendo un numero in forma binaria, sostituendo gli 0/1 e poi sommando 1, usando il bit più significativo come bit di segno, utilizzando l' eccesso 2^m-1 cioè mappando ad esempio i numeri dal -128 al +127 tra lo 0 e il 255.
 - Che cosa si intende per “esecuzione speculativa delle istruzioni/micro-istruzioni” e in quali casi può essere utile?
+La tecnica dell eseculazione speulativa è in utile nell'ambito del parallelismo (pipeline,architetture superscalari) e delle predizioni di salto, consiste nell'eseguire a priori una prte di codice gravosa prima ancora di sapere se questa parte verrà utilizzata o meno.
 - Che cos’è l’unità floating point di una CPU? Quali tipi di operazioni rende disponibili?
 - In base a quali caratteristiche possiamo affermare che una CPU è più potente di un’altra? Fornire un elenco.
+Le prestazioni di una CPU sono determinate da molte cose, ad esempio dal numero di pin d'indirizzo e pin dati ossia il numero di locazioni di memoria che può indirizzare e il munero di bit di parole che può scrivere o leggere in un unica operazione.
 - In quali casi (rispetto alla struttura di un programma) il pipelining non è efficace?
 - Discutere brevemente le differenze esistenti tra bus PCI e PCI-Express.
+La differenza si ha soprattutto in termini di velocità, il bus PCIe è notevolemente superiore, la vera differenza risiede nella composizione fisica del bus di collegamento, nella PCIe la connessione è punto a punto, esistono canali più grandi che operano in parallelo tra devices e CPU  
 - Qual è l'intervallo di numeri interi rappresentabile utilizzando n bit in complemento a 2?
 - Che differenza c'è (a livello geometrico) tra una traccia di un disco magnetico e una di un disco ottico? 
 - Che differenza c'è tra la codifica numerica del numero 8 e la codifica ASCII del digit 8?
