@@ -92,11 +92,11 @@ calcolare quanto dovrebbe essere il fattore di accelerazione della nuova unità 
 Domande 
 ----
 - Descrivere le principali caratteristiche del bus USB.<br>
-L' universal serial bus è nato per soddisfare alcune esigenze, la necessita di collegare una periferica senza dover smontare parti/porte del calcolatore, poter collegare/scollegare un device senza dover riavviare il calcolatore, poter alimentare un device tramite questo bus, la necessita di un live enviroment, un collegamento economico, poter collegare fino a 127 dispositivi. L' usb opera ad alta velocità consiste in 4 line, 2 alimentazione 2 dati alle quali nella versione 3.0 si aggiungeranno altri 5 linee dati 
+>L' universal serial bus è nato per soddisfare alcune esigenze, la necessita di collegare una periferica senza dover smontare parti/porte del calcolatore, poter collegare/scollegare un device senza dover riavviare il calcolatore, poter alimentare un device tramite questo bus, la necessita di un live enviroment, un collegamento economico, poter collegare fino a 127 dispositivi. L' usb opera ad alta velocità consiste in 4 line, 2 alimentazione 2 dati alle quali nella versione 3.0 si aggiungeranno altri 5 linee dati 
 - Descrivere brevemente le principali rappresentazioni dei numeri negativi nell’aritmetica binaria.<br>
-I numeri negativi possono essere rappresentati tramite il complemento a 2 : prendendo un numero in forma binaria, sostituendo gli 0/1 e poi sommando 1, usando il bit più significativo come bit di segno, utilizzando l' eccesso 2^m-1 cioè mappando ad esempio i numeri dal -128 al +127 tra lo 0 e il 255.
+>I numeri negativi possono essere rappresentati tramite il complemento a 2 : prendendo un numero in forma binaria, sostituendo gli 0/1 e poi sommando 1, usando il bit più significativo come bit di segno, utilizzando l' eccesso 2^m-1 cioè mappando ad esempio i numeri dal -128 al +127 tra lo 0 e il 255.
 - Che cosa si intende per “esecuzione speculativa delle istruzioni/micro-istruzioni” e in quali casi può essere utile?<br>
-La tecnica dell eseculazione speulativa è in utile nell'ambito del parallelismo (pipeline,architetture superscalari) e delle predizioni di salto, consiste nell'eseguire a priori una prte di codice gravosa prima ancora di sapere se questa parte verrà utilizzata o meno.
+>La tecnica dell eseculazione speulativa è in utile nell'ambito del parallelismo (pipeline,architetture superscalari) e delle predizioni di salto, consiste nell'eseguire a priori una prte di codice gravosa prima ancora di sapere se questa parte verrà utilizzata o meno.
 - Che cos’è l’unità floating point di una CPU? Quali tipi di operazioni rende disponibili? <br>
 L'unità Floating Point è un tipo di circuito che si occupa del calcolo delle operazioni in virgola mobile che una normale ALU non  può portare a compimento
 - In base a quali caratteristiche possiamo affermare che una CPU è più potente di un’altra? Fornire un elenco. <br>
