@@ -91,24 +91,24 @@ calcolare quanto dovrebbe essere il fattore di accelerazione della nuova unità 
 
 Domande 
 ----
-- Descrivere le principali caratteristiche del bus USB.<br>
+- Descrivere le principali caratteristiche del bus USB.
 >L' universal serial bus è nato per soddisfare alcune esigenze, la necessita di collegare una periferica senza dover smontare parti/porte del calcolatore, poter collegare/scollegare un device senza dover riavviare il calcolatore, poter alimentare un device tramite questo bus, la necessita di un live enviroment, un collegamento economico, poter collegare fino a 127 dispositivi. L' usb opera ad alta velocità consiste in 4 line, 2 alimentazione 2 dati alle quali nella versione 3.0 si aggiungeranno altri 5 linee dati 
 - Descrivere brevemente le principali rappresentazioni dei numeri negativi nell’aritmetica binaria.<br>
 >I numeri negativi possono essere rappresentati tramite il complemento a 2 : prendendo un numero in forma binaria, sostituendo gli 0/1 e poi sommando 1, usando il bit più significativo come bit di segno, utilizzando l' eccesso 2^m-1 cioè mappando ad esempio i numeri dal -128 al +127 tra lo 0 e il 255.
 - Che cosa si intende per “esecuzione speculativa delle istruzioni/micro-istruzioni” e in quali casi può essere utile?<br>
 >La tecnica dell eseculazione speulativa è in utile nell'ambito del parallelismo (pipeline,architetture superscalari) e delle predizioni di salto, consiste nell'eseguire a priori una prte di codice gravosa prima ancora di sapere se questa parte verrà utilizzata o meno.
 - Che cos’è l’unità floating point di una CPU? Quali tipi di operazioni rende disponibili? <br>
-L'unità Floating Point è un tipo di circuito che si occupa del calcolo delle operazioni in virgola mobile che una normale ALU non  può portare a compimento
+>L'unità Floating Point è un tipo di circuito che si occupa del calcolo delle operazioni in virgola mobile che una normale ALU non  può portare a compimento
 - In base a quali caratteristiche possiamo affermare che una CPU è più potente di un’altra? Fornire un elenco. <br>
-Fondamentale è la frequenza ossia i cicli di clock con la quale lavora la CPU, a parità di frequenze una CPU con WORD maggiori può processare piu dati nello stesso ciclo quindi è preferibile, i registri sono fondamentali per le prestazioni di una CPU quindi maggiori se ne hanno maggiore sarà la capacità di calcolo, il numero di pin d'indirizzo e pin dati ossia il numero di locazioni di memoria che può indirizzare e il munero di bit di parole che può scrivere o leggere in un unica operazione.
+>Fondamentale è la frequenza ossia i cicli di clock con la quale lavora la CPU, a parità di frequenze una CPU con WORD maggiori può processare piu dati nello stesso ciclo quindi è preferibile, i registri sono fondamentali per le prestazioni di una CPU quindi maggiori se ne hanno maggiore sarà la capacità di calcolo, il numero di pin d'indirizzo e pin dati ossia il numero di locazioni di memoria che può indirizzare e il munero di bit di parole che può scrivere o leggere in un unica operazione.
 - In quali casi (rispetto alla struttura di un programma) il pipelining non è efficace?<br>
-Il pipelining non è efficace se nel blocco di istruzioni ch si intende parallelizzare c'è un elevato numero di salti condizionali e casi in cui le istruzioni dipendono le une dalle altre
+>Il pipelining non è efficace se nel blocco di istruzioni ch si intende parallelizzare c'è un elevato numero di salti condizionali e casi in cui le istruzioni dipendono le une dalle altre
 - Discutere brevemente le differenze esistenti tra bus PCI e PCI-Express.<br>
-La differenza si ha soprattutto in termini di velocità, il bus PCIe è notevolemente superiore, la vera differenza risiede nella composizione fisica del bus di collegamento, nella PCIe la connessione è punto a punto, esistono canali più grandi che operano in parallelo tra devices e CPU  
+>La differenza si ha soprattutto in termini di velocità, il bus PCIe è notevolemente superiore, la vera differenza risiede nella composizione fisica del bus di collegamento, nella PCIe il bus diventa seriale, la connessione è punto a punto ed è possibile collegare coppie di master-slave (multi-master), esistono canali più grandi che operano in parallelo tra devices e CPU  
 - Qual è l'intervallo di numeri interi rappresentabile utilizzando n bit in complemento a 2?<br>
-Da -2^(n-1) a 2^(n-1) -1  
+>Da -2^(n-1) a 2^(n-1) -1  
 - Che differenza c'è (a livello geometrico) tra una traccia di un disco magnetico e una di un disco ottico? <br>
-In un disco ottico esistono i pity/land cioè fori e zone piane che riflettono un laser ed utilizzano un principio ottico con il quale codificano dati in formato binario, mentre su un disco magnetico esistono delle strisce magnetizzate che inducono su una testina un campo elettrico variabile che codifica dati, utilizzano quindi un principio elletro-magnetico.
+>In un disco ottico esistono i pity/land cioè fori e zone piane che riflettono un laser ed utilizzano un principio ottico con il quale codificano dati in formato binario, mentre su un disco magnetico esistono delle strisce magnetizzate che inducono su una testina un campo elettrico variabile che codifica dati, utilizzano quindi un principio elletro-magnetico.
 - Che differenza c'è tra la codifica numerica del numero 8 e la codifica ASCII del digit 8?
 - Descrivere brevemente la tassonomia di Flynn nell'ambito dei sistemi paralleli.
 - Cosa succede se al registro AL che contiene il numero 250 viene sommato 10? Qual è il nuovo valore di AL?
@@ -118,6 +118,7 @@ In un disco ottico esistono i pity/land cioè fori e zone piane che riflettono u
 - Qual è il vantaggio della rappresentazione floating-point rispetto a una rappresentazione dove la virgola assume una posizione fissa?
 - Quale invenzione presso i Bell Labs ha dato il via alla generazione II della storia dei calcolatori? In quali anni è stata fatta tale invenzione?
 - Che cosa si intende per MIPS e MFLOPS?
+> Sono unità di misura della potenza di calcolo di un sistema, IPS è l'acronimo di instruction per second, MIPS sta per Milion IPS mentre MFFLOPS è semplicemente indirizzato verso numeri floating point( virgola mobile) 
 - Elencare i tipi di memoria (rappresentazione piramidale) e per ciascuno indicare l'utilizzo tipico.
 - Che cosa si intende con circuiti integrati VLSI?
 - Disegnare il circuito di un comparatore a 4 bit.
@@ -133,6 +134,7 @@ In un disco ottico esistono i pity/land cioè fori e zone piane che riflettono u
 - Una CPU moderna (es. Intel Core I7) che ordine di grandezza (GigaFlops) raggiunge in termini di prestazioni?
 - In quale periodo storico furono realizzati i primi calcolatori meccanici? Descriverne i principali rappresentanti.
 - Che cosa si intende con il termine 'canali' nell'ambito del BUS PCI-Express?
+>I canali nella PCIe sono i collegamenti paralleli sui quali viaggiano le informazioni dalla periferica alla CPU per poter aumentare ulteriormente la banda
 - Cosa si intende per disco RAID?
 - Descrivere brevemente la codifica digitale di un'immagine a livelli di grigio.
 - Che cos'è il processo di fotolitografia utilizzato nella fabbricazione dei circuiti integrati?
@@ -143,24 +145,22 @@ In un disco ottico esistono i pity/land cioè fori e zone piane che riflettono u
 - differenza tra compilatore/assemblatore
 - frequenza di campionamento dei CD
 - DMA
+>(Direct Memory Acces) E' un circuito che consente il trasferimento di dati tra le periferiche senza la partecipazione della CPU. Ha 4 registri che contengono: Indirizzo iniziale, numero di byte, il numero del dispositivo e se i dati vanno letti o scritti. La CPU riempie questi registri e poi da il via al trasferimento. Al termine la CPU viene avvertita attraverso un Interrupt.
 - cache
 - i bit per quantizzazione quanti sono? un byte o due? (16 bit per canale su due canali) 
 - Cosa succede se al registro AL che contiene il numero 250 viene sommato 10? Qual è il nuovo valore di AL?
 - Perché l'usb si può definire bus?
-- In base a cosa una CPU è più potente di un'altra?
+>Perchè un bus è un sistema elettrico con il quale un compilatore trasporta dati, l' usb è un bus seriale universale 
 - Cos'è un multiplexer e a cosa può servire?
-- Complemento a due
 - unicode e ASCII
 -  fetch decode ed execute
 - eflags
 - differenza fra little endian e big endian
 - le espressioni booleane sono isomorfe ai circuiti digitali. Cosa significa?
 -  ho un disco magnetico e dram per leggere delle parole. In che ordine di grandezza siamo? (decine di millisecondi per HD e una o due decine di nanosecondi per la dram)
-- tassonomia di Flinn
 - i tipi di RAM
 - flip flop
 - pipeline
-- che cosa si intende con canale nell’ambito del PCI-express
 - tipi di rom
 - tipi di ram
 - motivo dell'uso dei floating point
@@ -176,7 +176,7 @@ In un disco ottico esistono i pity/land cioè fori e zone piane che riflettono u
 - Legge di Moore
 - localià spaziale e temporale
 - fotolitografia
-- quali sono i 3 diversi tipi di rappresentazione di numeri con segno? (grandezza e segno, c omplemento a 2, eccesso 2^(m-1))
+
  
 
 
