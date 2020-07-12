@@ -91,20 +91,24 @@ calcolare quanto dovrebbe essere il fattore di accelerazione della nuova unità 
 
 Domande 
 ----
-- Descrivere le principali caratteristiche del bus USB.
+- Descrivere le principali caratteristiche del bus USB.<br>
 L' universal serial bus è nato per soddisfare alcune esigenze, la necessita di collegare una periferica senza dover smontare parti/porte del calcolatore, poter collegare/scollegare un device senza dover riavviare il calcolatore, poter alimentare un device tramite questo bus, la necessita di un live enviroment, un collegamento economico, poter collegare fino a 127 dispositivi. L' usb opera ad alta velocità consiste in 4 line, 2 alimentazione 2 dati alle quali nella versione 3.0 si aggiungeranno altri 5 linee dati 
-- Descrivere brevemente le principali rappresentazioni dei numeri negativi nell’aritmetica binaria.
+- Descrivere brevemente le principali rappresentazioni dei numeri negativi nell’aritmetica binaria.<br>
 I numeri negativi possono essere rappresentati tramite il complemento a 2 : prendendo un numero in forma binaria, sostituendo gli 0/1 e poi sommando 1, usando il bit più significativo come bit di segno, utilizzando l' eccesso 2^m-1 cioè mappando ad esempio i numeri dal -128 al +127 tra lo 0 e il 255.
-- Che cosa si intende per “esecuzione speculativa delle istruzioni/micro-istruzioni” e in quali casi può essere utile?
+- Che cosa si intende per “esecuzione speculativa delle istruzioni/micro-istruzioni” e in quali casi può essere utile?<br>
 La tecnica dell eseculazione speulativa è in utile nell'ambito del parallelismo (pipeline,architetture superscalari) e delle predizioni di salto, consiste nell'eseguire a priori una prte di codice gravosa prima ancora di sapere se questa parte verrà utilizzata o meno.
-- Che cos’è l’unità floating point di una CPU? Quali tipi di operazioni rende disponibili?
-- In base a quali caratteristiche possiamo affermare che una CPU è più potente di un’altra? Fornire un elenco.
-Le prestazioni di una CPU sono determinate da molte cose, ad esempio dal numero di pin d'indirizzo e pin dati ossia il numero di locazioni di memoria che può indirizzare e il munero di bit di parole che può scrivere o leggere in un unica operazione.
-- In quali casi (rispetto alla struttura di un programma) il pipelining non è efficace?
-- Discutere brevemente le differenze esistenti tra bus PCI e PCI-Express.
+- Che cos’è l’unità floating point di una CPU? Quali tipi di operazioni rende disponibili? <br>
+L'unità Floating Point è un tipo di circuito che si occupa del calcolo delle operazioni in virgola mobile che una normale ALU non  può portare a compimento
+- In base a quali caratteristiche possiamo affermare che una CPU è più potente di un’altra? Fornire un elenco. <br>
+Fondamentale è la frequenza ossia i cicli di clock con la quale lavora la CPU, a parità di frequenze una CPU con WORD maggiori può processare piu dati nello stesso ciclo quindi è preferibile, i registri sono fondamentali per le prestazioni di una CPU quindi maggiori se ne hanno maggiore sarà la capacità di calcolo, il numero di pin d'indirizzo e pin dati ossia il numero di locazioni di memoria che può indirizzare e il munero di bit di parole che può scrivere o leggere in un unica operazione.
+- In quali casi (rispetto alla struttura di un programma) il pipelining non è efficace?<br>
+Il pipelining non è efficace se nel blocco di istruzioni ch si intende parallelizzare c'è un elevato numero di salti condizionali e casi in cui le istruzioni dipendono le une dalle altre
+- Discutere brevemente le differenze esistenti tra bus PCI e PCI-Express.<br>
 La differenza si ha soprattutto in termini di velocità, il bus PCIe è notevolemente superiore, la vera differenza risiede nella composizione fisica del bus di collegamento, nella PCIe la connessione è punto a punto, esistono canali più grandi che operano in parallelo tra devices e CPU  
-- Qual è l'intervallo di numeri interi rappresentabile utilizzando n bit in complemento a 2?
-- Che differenza c'è (a livello geometrico) tra una traccia di un disco magnetico e una di un disco ottico? 
+- Qual è l'intervallo di numeri interi rappresentabile utilizzando n bit in complemento a 2?<br>
+Da -2^(n-1) a 2^(n-1) -1  
+- Che differenza c'è (a livello geometrico) tra una traccia di un disco magnetico e una di un disco ottico? <br>
+In un disco ottico esistono i pity/land cioè fori e zone piane che riflettono un laser ed utilizzano un principio ottico con il quale codificano dati in formato binario, mentre su un disco magnetico esistono delle strisce magnetizzate che inducono su una testina un campo elettrico variabile che codifica dati, utilizzano quindi un principio elletro-magnetico.
 - Che differenza c'è tra la codifica numerica del numero 8 e la codifica ASCII del digit 8?
 - Descrivere brevemente la tassonomia di Flynn nell'ambito dei sistemi paralleli.
 - Cosa succede se al registro AL che contiene il numero 250 viene sommato 10? Qual è il nuovo valore di AL?
