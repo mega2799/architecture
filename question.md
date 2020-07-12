@@ -39,7 +39,6 @@ probabilmente da esadecimale a decimale in IEEE754
 è un numero maggiore di 1 (and e not sono operatori bit a bit). Si scriva la tabella di verità di F, 
 quindi si determini e si semplifichi la corrispondente espressione booleana.
 
-23/06/2020
 - Si consideri una CPU in grado di eseguire un programma P in 200ns. In una versione più evoluta della stessa CPU sono state accelerate alcune istruzioni di un fattore a: 
 tale nuova CPU è in grado di eseguire P in 150ns. 
 Sapendo che il fattore di accelerazione è a=2, si calcoli la percentuale di istruzioni accelerate p rispetto al totale di quelle contenute nel programma P.
@@ -73,7 +72,6 @@ Sapendo che il tempo totale di lettura delle parole è di 1230ns, determinare il
 - Si converta in base 10 il numero rappresentato in formato IEEE754 singola precisione da: 
 43800000h
 
-25 Giugno
 - Siano A = (a1 a0) e B = (b1 b0) due numeri binari (con a1 e b1 bit più significativi); si consideri la funzione booleana F(A,B) che è vera se (A-B) è un numero positivo e primo. 
 Si scriva la tabella di verità di F e si determini la corrispondente espressione booleana
 
@@ -93,6 +91,12 @@ calcolare quanto dovrebbe essere il fattore di accelerazione della nuova unità 
 
 Domande 
 ----
+<<<<<<< HEAD
+=======
+
+Domande 
+----
+>>>>>>> f9c1b23d9d2974148cbc31a0d0fc16b91582a177
 - Descrivere le principali caratteristiche del bus USB.
 L' universal serial bus è nato per soddisfare alcune esigenze, la necessita di collegare una periferica senza dover smontare parti/porte del calcolatore, poter collegare/scollegare un device senza dover riavviare il calcolatore, poter alimentare un device tramite questo bus, la necessita di un live enviroment, un collegamento economico, poter collegare fino a 127 dispositivi. L' usb opera ad alta velocità consiste in 4 line, 2 alimentazione 2 dati alle quali nella versione 3.0 si aggiungeranno altri 5 linee dati 
 - Descrivere brevemente le principali rappresentazioni dei numeri negativi nell’aritmetica binaria.
@@ -175,4 +179,9 @@ La differenza si ha soprattutto in termini di velocità, il bus PCIe è notevole
 - localià spaziale e temporale
 - fotolitografia
 - quali sono i 3 diversi tipi di rappresentazione di numeri con segno? (grandezza e segno, c omplemento a 2, eccesso 2^(m-1))
+<<<<<<< HEAD
  
+=======
+
+
+>>>>>>> f9c1b23d9d2974148cbc31a0d0fc16b91582a177
