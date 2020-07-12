@@ -91,12 +91,6 @@ calcolare quanto dovrebbe essere il fattore di accelerazione della nuova unità 
 
 Domande 
 ----
-<<<<<<< HEAD
-=======
-
-Domande 
-----
->>>>>>> f9c1b23d9d2974148cbc31a0d0fc16b91582a177
 - Descrivere le principali caratteristiche del bus USB.
 L' universal serial bus è nato per soddisfare alcune esigenze, la necessita di collegare una periferica senza dover smontare parti/porte del calcolatore, poter collegare/scollegare un device senza dover riavviare il calcolatore, poter alimentare un device tramite questo bus, la necessita di un live enviroment, un collegamento economico, poter collegare fino a 127 dispositivi. L' usb opera ad alta velocità consiste in 4 line, 2 alimentazione 2 dati alle quali nella versione 3.0 si aggiungeranno altri 5 linee dati 
 - Descrivere brevemente le principali rappresentazioni dei numeri negativi nell’aritmetica binaria.
@@ -179,9 +173,6 @@ La differenza si ha soprattutto in termini di velocità, il bus PCIe è notevole
 - localià spaziale e temporale
 - fotolitografia
 - quali sono i 3 diversi tipi di rappresentazione di numeri con segno? (grandezza e segno, c omplemento a 2, eccesso 2^(m-1))
-<<<<<<< HEAD
  
-=======
 
 
->>>>>>> f9c1b23d9d2974148cbc31a0d0fc16b91582a177
