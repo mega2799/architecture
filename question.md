@@ -110,33 +110,56 @@ Domande
 - Che differenza c'è (a livello geometrico) tra una traccia di un disco magnetico e una di un disco ottico? <br>
 >In un disco ottico esistono i pity/land cioè fori e zone piane che riflettono un laser ed utilizzano un principio ottico con il quale codificano dati in formato binario, mentre su un disco magnetico esistono delle strisce magnetizzate che inducono su una testina un campo elettrico variabile che codifica dati, utilizzano quindi un principio elletro-magnetico.
 - Che differenza c'è tra la codifica numerica del numero 8 e la codifica ASCII del digit 8?
+>La codifica ascii è ciò che il computer riconosce come numero 8 ma non lo è effettivamente, è solo un identificativo valido per tutti i calcolatori mentre la codifica del numero è rappresentare un numero attraverso un metodo uguale per tutti i numeri/caratteri (?)
 - Descrivere brevemente la tassonomia di Flynn nell'ambito dei sistemi paralleli.
+>La tassonomia o classificazione di Fylnn si basa sulla distinzione delle sequenze di istruzioni e al corrispettivo numero di sequenze di dati coinvolti in tali istruzioni
 - Cosa succede se al registro AL che contiene il numero 250 viene sommato 10? Qual è il nuovo valore di AL?
+>Il registro AL è un registro a 4 bit, questo vuol dire che il range di valori che può rappresentare va da 0 a 255 (se unsigned) e quindi se dovessi sommare a 250 il 10 si andrebbe fuori range e la cifra più significativa andrebbe ad occupare parte del registro AH, il valore sarebbe FA + A = 104
 - Quali sono le principali famiglie di CPU RISC non x86 per il mercato server?
+>Sparc, Alpha, Power
 - Indicare il tempo necessario (come ordine di grandezza) per eseguire ciascuna delle tre fasi necessarie per la lettura di un settore in un disco magnetico.
+> Average Seek: 8-10 ms (di solito si riferisce a letture),Track-to-Track: 1 ms, Full-stroke: 15-20 ms (dalla traccia più interna alla traccia più esterna)
 - Descrivere l'evoluzione delle istruzioni SIMD nell'ambito delle architetture x86.
+>L' aggiunta di 8 nuovi registri a 128 bit chiamati XMM, che consentiranno operazioni SIMD floating point a doppia precisione 
 - Qual è il vantaggio della rappresentazione floating-point rispetto a una rappresentazione dove la virgola assume una posizione fissa?
+>Il vantaggio sta quando si deve lavorare con numeri molto alti per i quali può essere comodo rappresentare solo le cifre più significative, si utilizza quindi una frazione moltiplicata per una delle potenze del 10 
 - Quale invenzione presso i Bell Labs ha dato il via alla generazione II della storia dei calcolatori? In quali anni è stata fatta tale invenzione?
+>L' invenzione è il transistor, quest'invenzione è stata fatta nel 1948 
 - Che cosa si intende per MIPS e MFLOPS?
 > Sono unità di misura della potenza di calcolo di un sistema, IPS è l'acronimo di instruction per second, MIPS sta per Milion IPS mentre MFFLOPS è semplicemente indirizzato verso numeri floating point( virgola mobile) 
 - Elencare i tipi di memoria (rappresentazione piramidale) e per ciascuno indicare l'utilizzo tipico.
+>Volatile: l’informazione rimane memorizzata fino a che il calcolatore è alimentato, Persistente: l’informazione   rimane   memorizzata   anche   quando   il calcolatore non è alimentato (spento), On line :i dati sono sempre accessibili, off-line: il supporto deve essere montato per poter accedere ai dati
 - Che cosa si intende con circuiti integrati VLSI?
+> E' una tiopologia di circuiti che al suo interno possiede più di 100 000 transistor, VLSI stà per very large scale integrated
 - Disegnare il circuito di un comparatore a 4 bit.
+> 4 XOR 
 - In una moderna CPU multi-core come sono generalmente organizzati i tre livelli di cache?
-- Quante diverse configurazioni si possono codificare con n bit? Qual è il numero più grande che può essere codificato considerando solo numeri interi positivi?
+- Quante diverse configurazioni si possono codificare con n bit?
+> 2 ^ (n-1)
+- Qual è il numero più grande che può essere codificato considerando solo numeri interi positivi?
+> 65 536 
 - Che cosa si intende per RAM sincrona DDR e qual è la principale caratteristica rispetto a una RAM sincrona (non DDR)?
+>Una ram sicrona è un tipo di ram sia dinamica sia statica, la differenza sta nel fatto che è guidata dal clock di sistema e quindi la risposta è sempre inviata dopo un numero prefissato di cicli di clock, perciò la CPU puo dedicarsi ad altro nel mentre non riceve una risposta
 - Quali sono le principali interfacce per dischi magnetici?
+> SATA, IDE, EIDE, SCSI  
 - Quali sono le 'generazioni' della storia dei calcolatori?
+> Zero; calcolatori meccanici, Prima; relè valvole termodinamiche, Seconda; transistor, Terza; circuiti integrati, Quarta; VLSI, Quinta: smartphone, tablet e sistemi embedded 
 - Quali sono le principali caratteristiche delle CPU ARM utilizzate nei sistemi embedded rispetto alle CPU utilizzate nei PC?
-- Quali sono le tre principali tecniche di rappresentazione di numeri interi con segno? Dare una breve descrizione.
+>Hanno una capacita di calcolo di poco inferiore e sono a bassissimo consumo  
 - Come può essere eseguita una sottrazione all'interno di una ALU utilizzando il circuito sommatore?
+>Si potrebbe eseguire una somma, pero utilizzando il complemento a 2, quindi facendo un not bit a bit del secondo operando, sommargli 1 e poi eseguire una normale somma tra interi 
 - Descrivere brevemente la codifica digitale di un suono.
+>Un suono è un onda quindi un segnale analogico, viene quindi rappresentata attraverso un campionamento ed una quantizzazione con elevato numero di bit 
 - Una CPU moderna (es. Intel Core I7) che ordine di grandezza (GigaFlops) raggiunge in termini di prestazioni?
+>dai 50 ai 1000 GigaFlops 
 - In quale periodo storico furono realizzati i primi calcolatori meccanici? Descriverne i principali rappresentanti.
+>Il periodo storico è circa quello del 1600, Pascal con dispositivo ad ingranaggi azionati a manovella (addizioni e sottrazioni), VOn Leibiniz 1672 macchina in grado di eseguire moltiplicazioni, 1834 Macchina di turing  
 - Che cosa si intende con il termine 'canali' nell'ambito del BUS PCI-Express?
 >I canali nella PCIe sono i collegamenti paralleli sui quali viaggiano le informazioni dalla periferica alla CPU per poter aumentare ulteriormente la banda
 - Cosa si intende per disco RAID?
+>E' un sistema di organizzazione della memoria in cui una serie di dischi economici vengono collegati tra loro ed appaioiono al compilatore come un unica memoria, tutto cio per incrementare le prestazioni e poter sostituire dischi piu facilmente 
 - Descrivere brevemente la codifica digitale di un'immagine a livelli di grigio.
+>L' immagine viene rappresentata come una matrice ed ogni termine di questa matrice potrebbe essere un pixel, ogni elemento della matrice indica numericamente la quantita di grigio cioe luminosita in una scala a 256 grigi, 1 pixel => 1 byte 
 - Che cos'è il processo di fotolitografia utilizzato nella fabbricazione dei circuiti integrati?
 - Quali sono le principali differenze in termini di prestazioni tra dischi magnetici e dischi allo stato solido?
 - Che cos'è la codifica dei caratteri UNICODE e per quale motivo è stata introdotta?
@@ -148,34 +171,30 @@ Domande
 >(Direct Memory Acces) E' un circuito che consente il trasferimento di dati tra le periferiche senza la partecipazione della CPU. Ha 4 registri che contengono: Indirizzo iniziale, numero di byte, il numero del dispositivo e se i dati vanno letti o scritti. La CPU riempie questi registri e poi da il via al trasferimento. Al termine la CPU viene avvertita attraverso un Interrupt.
 - cache
 - i bit per quantizzazione quanti sono? un byte o due? (16 bit per canale su due canali) 
-- Cosa succede se al registro AL che contiene il numero 250 viene sommato 10? Qual è il nuovo valore di AL?
-- Perché l'usb si può definire bus?
 >Perchè un bus è un sistema elettrico con il quale un compilatore trasporta dati, l' usb è un bus seriale universale 
 - Cos'è un multiplexer e a cosa può servire?
+>Il multiplexer è un circuito che permettere tramite n bit di controllo di indirizzare un segnale scelte tra 2^n verso l'output 
 - unicode e ASCII
 -  fetch decode ed execute
 - eflags
 - differenza fra little endian e big endian
 - le espressioni booleane sono isomorfe ai circuiti digitali. Cosa significa?
--  ho un disco magnetico e dram per leggere delle parole. In che ordine di grandezza siamo? (decine di millisecondi per HD e una o due decine di nanosecondi per la dram)
+-  ho un disco magnetico e dram per leggere delle parole. In che ordine di grandezza siamo? 
+> decine di millisecondi per HD e una o due decine di nanosecondi per la dram
 - i tipi di RAM
 - flip flop
 - pipeline
 - tipi di rom
-- tipi di ram
-- motivo dell'uso dei floating point
 - generazioni dei calcolatori
 - ordini di grandezza nei tempi di lettura delle memorie e hard disk
 - cos'è una unità floating point
 - come funziona un hard disk
 - quante configurazioni con n bit e intervalli rappresentabili nelle diverse codifiche
 - parallelismo nel chip
-- architetture non x86 server
 - clock\periodo di clock\frequenza di clock
 - distanza di hamming e uso per identificare\correggere errori
 - Legge di Moore
 - localià spaziale e temporale
-- fotolitografia
 
  
 
