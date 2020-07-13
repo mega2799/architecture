@@ -1,4 +1,6 @@
 Esercizi
+===
+x = 0 y = 8 
 ---
 - Una cisterna è dotata di 4 pompe: PA e PB riempiono la cisterna, PC e PD la svuotano. Sapendo che la capacità delle pompe è rispettivamente di 7, 5, 8 e 4 litri/secondo 
 si indichi (tramite tabella di verità) per quali configurazioni di pompe accese la vasca si riempirà. Si scriva la tavola di verità e si derivi 
@@ -90,7 +92,7 @@ calcolare quanto dovrebbe essere il fattore di accelerazione della nuova unità 
 - Si converta in base 10 il numero rappresentato in formato IEEE754 singola precisione da: 449a4000h
 
 Domande 
-----
+===
 - Descrivere le principali caratteristiche del bus USB.
 >L' universal serial bus è nato per soddisfare alcune esigenze, la necessita di collegare una periferica senza dover smontare parti/porte del calcolatore, poter collegare/scollegare un device senza dover riavviare il calcolatore, poter alimentare un device tramite questo bus, la necessita di un live enviroment, un collegamento economico, poter collegare fino a 127 dispositivi. L' usb opera ad alta velocità consiste in 4 line, 2 alimentazione 2 dati alle quali nella versione 3.0 si aggiungeranno altri 5 linee dati 
 - Descrivere brevemente le principali rappresentazioni dei numeri negativi nell’aritmetica binaria.<br>
