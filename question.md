@@ -6,14 +6,22 @@ x = 0 y = 8
 si indichi (tramite tabella di verità) per quali configurazioni di pompe accese la vasca si riempirà. Si scriva la tavola di verità e si derivi 
 la corrispondente espressione booleana.
 
+>__A__ __B__ C __D__ + __A__ B C __D__+ A __B__ __C__ __D__ + A __B__ C __D__ +A __B__ C D + A B __C__ __D__ +  A B C __D__  <br>
+ris: __D__(A+C) + A __B__ C 
+
+- ABC+ABD+BC+C+AD+A+B+AA 
+>A+B+C
+
 - Siano x e y le ultime due cifre della propria matricola in base 10 (esempio: matricola 3465 x=6, y=5). Una CPU impiega 7 microsecondi per eseguire un frammento di programma 
 composto da: x istruzioni di tipo A, y di tipo B e 11 di tipo C. Sapendo che i tre tipi di istruzioni richiedono rispettivamente 14, 49 e 21 cicli di datapath, 
 si calcoli la frequenza della CPU, esprimendo il risultato in MHz
+>ris: 0.000229 MHz 0.00211
 
 - Sia x l’ultima cifra della propria matricola in base 10 (esempio: matricola 3465 x=5). Si consideri una CPU dotata di una cache di 1° livello 
 con tempo di accesso pari a 5 nanosecondi. Durante l’esecuzione di un programma, la CPU ha impiegato 2,11 microsecondi per leggere dalla memoria 22+x parole; 
 sapendo che x+2 di tali parole erano già contenute nella cache all’inizio dell’esecuzione del programma e che durante l’esecuzione non è mai stato necessario 
 rimpiazzare parole nella cache, si calcoli il tempo di accesso a una parola della RAM, esprimendo il risultato in nanosecondi.
+>ris: 105 ns 
 
 - Siano A = (a1 a0) e B = (b1 b0) due numeri binari (con a1 e b1 bit più significativi); si consideri la funzione booleana F(A,B) che è vera se (A xor B) è un numero dispari. 
 Si scriva la tabella di verità di F e si determini la corrispondente espressione booleana.
@@ -22,10 +30,17 @@ Si scriva la tabella di verità di F e si determini la corrispondente espression
 dotata di una frequenza di clock di (1+x)*10 MHz. È stata progettata una nuova CPU B in grado di operare a una frequenza maggiore: B esegue P in soli 6 secondi. 
 Sapendo che, al fine di consentire l’aumento della frequenza, si è dovuto aumentare il numero di clock per istruzione (CPI) in media del 20% 
 (ad esempio, un’istruzione che nella CPU A richiedeva 5 CPI, nella CPU B ne richiede 6), si stimi la frequenza a cui opera la CPU B.
+>ris: 20 MHz 
 
 - Siano x e y le ultime due cifre della propria matricola in base 10 (esempio: matricola 3465  x=5, y=6). Si consideri una CPU in grado di eseguire un programma P in 100ns. 
 In una versione più evoluta della stessa CPU sono state accelerate alcune istruzioni di un fattore a: tale CPU è in grado di eseguire P in (80+y) ns. 
 Sapendo che la percentuale di istruzioni accelerate rispetto al totale di quelle contenute nel programma P è [(x+6)*5]%, si calcoli il fattore di accelerazione a.
+>ris: 5/3
+
+- Siano x e y le ultime due cifre della propria matricola in base 10 (esempio: matricola 3465 x=5; y=6). In una CPU dotata di una cache di 1° livello, durante l’esecuzione di un programma il tempo totale di accesso a x+15 parole è stato di 1200ns. Sapendo che y+1 fra tali parole non sono state trovate nella cache e che la RAM ha un tempo di accesso di 100ns, si calcoli il tempo di accesso alla cache. Si può lasciare indicato un valore frazionario, purché semplificato.
+>ris: 50 ns 
+
+- La nuova giunta provinciale ha deciso di rivoluzionare il flusso stradale tra Forlì a Cesena in modo da evitare il coro di critiche dei cittadini stanchi di passare ore in coda. Sono a disposizione 4 percorsi che verranno utilizzati come sensi unici (o da Forlì a Cesena o da Cesena a Forlì); le esigenze di trasferimento sono pari a 20 mila persone al giorno da Forlì a Cesena e 20 mila persone al giorno da Cesena a Forlì. Sapendo che le 4 strade possono essere percorse rispettivamente da 18, 8, 12, 16 mila persone al giorno. Si identifichi tramite tabella di verità le combinazioni di sensi unici che permettono di soddisfare le esigenze e si determini la corrispondente espressione booleana.
 
 - Siano y e x le ultime due cifre della propria matricola in base 10 (esempio: matricola 3465 : x=5, y=6). 
 Si consideri una CPU dotata di una cache di 1° livello con tempo di accesso pari a 4+y nanosecondi e una RAM con tempo di accesso pari a 101+(5*y) nanosecondi. 
@@ -33,6 +48,7 @@ Durante l’esecuzione di un programma, la CPU ha impiegato 6,12 microsecondi pe
 sapendo che, all’inizio dell’esecuzione del programma, x+8 di tali parole erano già contenute nella cache di 1° livello e x+13 in quella di 2° livello
 e che durante l’esecuzione non è mai stato necessario rimpiazzare parole nelle cache, si calcoli il tempo di accesso a una parola della cache di 2° livello, 
 esprimendo il risultato in nanosecondi.
+>ris: 125,3 ns 
 
 - 0xc3ec1000
 probabilmente da esadecimale a decimale in IEEE754
@@ -40,10 +56,12 @@ probabilmente da esadecimale a decimale in IEEE754
 - Siano A = (a_1 a_0) e B = (b_1 b_0) due numeri binari (con a_1 e b_1 bit più significativi); si consideri la funzione booleana F(A,B) che è vera se (A and (not B)) 
 è un numero maggiore di 1 (and e not sono operatori bit a bit). Si scriva la tabella di verità di F, 
 quindi si determini e si semplifichi la corrispondente espressione booleana.
+>
 
 - Si consideri una CPU in grado di eseguire un programma P in 200ns. In una versione più evoluta della stessa CPU sono state accelerate alcune istruzioni di un fattore a: 
 tale nuova CPU è in grado di eseguire P in 150ns. 
 Sapendo che il fattore di accelerazione è a=2, si calcoli la percentuale di istruzioni accelerate p rispetto al totale di quelle contenute nel programma P.
+>ris: 50%
 
 - ((A+BC(X+Z)(ABX)+D) + 1 ) (ACD+AD+BA+DAB) NULL
 ((1 ) (ACD+AD+BA+DAB) Identità
@@ -164,11 +182,16 @@ Domande
 >L' immagine viene rappresentata come una matrice ed ogni termine di questa matrice potrebbe essere un pixel, ogni elemento della matrice indica numericamente la quantita di grigio cioe luminosita in una scala a 256 grigi, 1 pixel => 1 byte 
 - Che cos'è il processo di fotolitografia utilizzato nella fabbricazione dei circuiti integrati?
 - Quali sono le principali differenze in termini di prestazioni tra dischi magnetici e dischi allo stato solido?
+>I dischi SSD sono un evoluzione degli HDD, la loro velocità è maggiore 100-600 Mb/s rispoetto a quello degli HDD 100-300Mb/s, i primi sono composti da circuiti e transistor il che li rende molto compatti ma poco capienti, i secondi sono dischi magnetici con testine che operano ad altazze di nanometri quindi estremamente delicati ma molto capienti, un altr differenza percio risiede nel costo, gli SSD hanno un costo di 0,23 $/Gb mentre gli HDD 0,03 $/Gb, solitamente gli SSD si usano installando un sistema operativo su di essi per la velocita d'avvio  
 - Che cos'è la codifica dei caratteri UNICODE e per quale motivo è stata introdotta?
+>E' una codifica internazionale dei caratteri di qualsiasi  lingua, simbolo, braille, è stata introdotta per permetttere una comunicazione da chiunque verso chiunque 
 - Cosa si intende con il termine 'maschera di bit' e in quali casi può essere utile?
+> E' un insieme di bit di lunghezza predefinita che può essere usato come operatore nelle operazioni bit a bit, oppure nel codice di correzione degli errori 
 - Cosa si intende per località spaziale e località temporale in una memoria Cache?
 - differenza tra compilatore/assemblatore
+>Il compilatore è un programma che traduce le daun linguaggio di programmazione di alto livello le istruzioni ISA e le esegue in una seconda passata creando un file eseguibile .exe (SIMI) mentre l'assemblatore legge direttamente codice in formato assembly (SISI) 
 - frequenza di campionamento dei CD
+>44.1kHz
 - DMA
 >(Direct Memory Acces) E' un circuito che consente il trasferimento di dati tra le periferiche senza la partecipazione della CPU. Ha 4 registri che contengono: Indirizzo iniziale, numero di byte, il numero del dispositivo e se i dati vanno letti o scritti. La CPU riempie questi registri e poi da il via al trasferimento. Al termine la CPU viene avvertita attraverso un Interrupt.
 - cache
