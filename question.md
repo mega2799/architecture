@@ -57,7 +57,7 @@ esprimendo il risultato in nanosecondi.
 >ris: 125,3 ns 
 
 - 0xc3ec1000
-probabilmente da esadecimale a decimale in IEEE754
+da esadecimale a decimale in IEEE754
 >ris: 1100 0011 1110 1100 0001 0000 0000 0000
 
 - Siano A = (a_1 a_0) e B = (b_1 b_0) due numeri binari (con a_1 e b_1 bit più significativi); si consideri la funzione booleana F(A,B) che è vera se (A and (not B)) 
@@ -89,7 +89,7 @@ si stimi il nuovo tempo di esecuzione nell’ipotesi di sostituire l’unità ch
 >ris: 4 s 
 
 - Si trasformi in formato IEEE 754 singola precisione il seguente numero: 271.5
->ris: 43C3E000h 
+>ris: 4387C000h 
 
 - Si consideri un calcolatore dotato di una cache a 2 livelli. Il tempo di accesso a una parola è di 5ns per la cache di primo livello, 10ns per la cache di secondo livello. 
 Durante l’esecuzione di un programma, 20 parole sono lette dalla RAM, 12 dalla cache di primo livello e 18 parole sono lette dalla cache di secondo livello. 
@@ -128,7 +128,7 @@ Domande
 ===
 - Descrivere le principali caratteristiche del bus USB.
 >L' universal serial bus è nato per soddisfare alcune esigenze, la necessita di collegare una periferica senza dover smontare parti/porte del calcolatore, poter collegare/scollegare un device senza dover riavviare il calcolatore, poter alimentare un device tramite questo bus, la necessita di un live enviroment, un collegamento economico, poter collegare fino a 127 dispositivi. L' usb opera ad alta velocità consiste in 4 line, 2 alimentazione 2 dati alle quali nella versione 3.0 si aggiungeranno altri 5 linee dati 
-- Descrivere brevemente le principali rappresentazioni dei numeri negativi nell’aritmetica binaria.<br>
+- Descrivere brevemente le principali rappresentazioni dei numeri negativi nell’aritmetica binaria.
 >I numeri negativi possono essere rappresentati tramite il complemento a 2 : prendendo un numero in forma binaria, sostituendo gli 0/1 e poi sommando 1, usando il bit più significativo come bit di segno, utilizzando l' eccesso 2^m-1 cioè mappando ad esempio i numeri dal -128 al +127 tra lo 0 e il 255.
 - Che cosa si intende per “esecuzione speculativa delle istruzioni/micro-istruzioni” e in quali casi può essere utile?<br>
 >La tecnica dell eseculazione speulativa è in utile nell'ambito del parallelismo (pipeline,architetture superscalari) e delle predizioni di salto, consiste nell'eseguire a priori una prte di codice gravosa prima ancora di sapere se questa parte verrà utilizzata o meno.
@@ -169,6 +169,7 @@ Domande
 - Disegnare il circuito di un comparatore a 4 bit.
 > 4 XOR che conflusicono in un NOR 
 - In una moderna CPU multi-core come sono generalmente organizzati i tre livelli di cache?
+>Nella vera e propria CPU è collocato il livello 1, diviso tra dati ed istruzioni, nel package della CPU esterno al vero prprio chip risiede la cache di secondo livello unficata e poi collocata sulla motherboard abbiamo una cache di livello 3
 - Quante diverse configurazioni si possono codificare con n bit?
 > 2 ^ (n-1)
 - Qual è il numero più grande che può essere codificato considerando solo numeri interi positivi?
@@ -200,6 +201,7 @@ Domande
 - Descrivere brevemente la codifica digitale di un'immagine a livelli di grigio.
 >L' immagine viene rappresentata come una matrice ed ogni termine di questa matrice potrebbe essere un pixel, ogni elemento della matrice indica numericamente la quantita di grigio cioe luminosita in una scala a 256 grigi, 1 pixel => 1 byte 
 - Che cos'è il processo di fotolitografia utilizzato nella fabbricazione dei circuiti integrati?
+>E' un processo utilizzato per creare circuiti, funziona prendendo sabbie silicee e fondendole si ottengono dei dischi molto sottili, successivamente su questi dischi chiamati wafer vengono applicati degli strati di materiali semiconduttori, ora sui dischi dei laser incidono delle tracce, dopo una bagno in solventi e una serie di incisioni/lavaggi vengono creati tramite rilievo dei piccolissimi transistor i quali verranno poi ritagliati ed utilizzati nei circuiti che tutti conosciamo 
 - Quali sono le principali differenze in termini di prestazioni tra dischi magnetici e dischi allo stato solido?
 >I dischi SSD sono un evoluzione degli HDD, la loro velocità è maggiore 100-600 Mb/s rispoetto a quello degli HDD 100-300Mb/s, i primi sono composti da circuiti e transistor il che li rende molto compatti ma poco capienti, i secondi sono dischi magnetici con testine che operano ad altazze di nanometri quindi estremamente delicati ma molto capienti, un altr differenza percio risiede nel costo, gli SSD hanno un costo di 0,23 $/Gb mentre gli HDD 0,03 $/Gb, solitamente gli SSD si usano installando un sistema operativo su di essi per la velocita d'avvio  
 - Che cos'è la codifica dei caratteri UNICODE e per quale motivo è stata introdotta?
@@ -207,6 +209,7 @@ Domande
 - Cosa si intende con il termine 'maschera di bit' e in quali casi può essere utile?
 > E' un insieme di bit di lunghezza predefinita che può essere usato come operatore nelle operazioni bit a bit, oppure nel codice di correzione degli errori 
 - Cosa si intende per località spaziale e località temporale in una memoria Cache?
+>Questi concetti esprimono due operazioni della cache ossia l' allocazione di blocchi ed il loro rimpiazzamento, il principio di spazialità dice che dopo aver prelevato un istruzione dalla memoria la probabilità di dover prelevare istruzioni vicine ad essa è molto alto, percio si preleva tuttop  il blocco di istruzioni e lo si alloca nella cache, il principio di spazialià invece dice che la probabilità che un blocco appena prelevato venga utilizzato di lì a poco tempo è alta, perciò si rimpiazza con il blocco appena utilizzato quello in memoria da più tempo, la politica è quella del LRU (Last Recently Used) 
 - differenza tra compilatore/assemblatore
 >Il compilatore è un programma che traduce le daun linguaggio di programmazione di alto livello le istruzioni ISA e le esegue in una seconda passata creando un file eseguibile .exe (SIMI) mentre l'assemblatore legge direttamente codice in formato assembly (SISI) 
 - frequenza di campionamento dei CD
@@ -232,7 +235,7 @@ Domande
 - i tipi di RAM
 > SRAM, DRAM, SDRAM
 - differenza tra DRAM e SRAM 
->I due tipi di RAM differiscono per struttura, le SRAM sono costituite da Flip-flop e sono quindi molto veloci e costose, spesso utilizzate nelle cache di secondo livello le DRAM  invece sono costituite da un transitor e un condensatore 
+>I due tipi di RAM differiscono per struttura, le SRAM sono costituite da Flip-flop e sono quindi molto veloci e costose, spesso utilizzate nelle cache di secondo livello le DRAM invece sono costituite da un transitor e un condensatore, tempi di prelevamento delle istruzioni passano da alcuni nanosecondi (SRAM) a decine di nanosecondi (DRAM)
 - flip flop
 >Prima di parlare del Flip-Flop bisogna spiegare cosa sia un latch SR, un circuito che dato un input è in grado di ricordare se quell input è uno 0 oppure un 1 attraverso la caratteristica di questo circuito di potersi mantenere tramite una corrente in due stati stabili ben definiti(bistabile), il latch di tipo D ulitlizza il clock per regolare questi cambiamenti il flip-flop fa una cosa simile solo che al posto di utilizzare 'alto/basso del segnale di clock usa il fronte di discesa e di salita.
 - pipeline
@@ -240,13 +243,14 @@ Domande
 - tipi di rom
 >PROM; programmable ROM, i programmi possono essere scritti una volta con tecnioche a basso costo, EPROM; Erasable PROM i campi possono esseere programmati ma anche cancellati con UVA, EEPROM; Elettrically EPROM una EPROM che può essere cancellata elettronicamente senza essere smontata, FLASH; cancellabile come EEPROM ma non con singole parole bensi a blocchi (card sd, Memory FLash)
 - ordini di grandezza nei tempi di lettura delle memorie e hard disk
->Hard disk; average seek 8-10 millisecondi, track to track 2 millisecondi, full stroke 15-20 millisecondi mentre SSD hano un tempo di accesso di 100 microsecondi
+>Hard disk; average seek 8-10 millisecondi, track to track 2 millisecondi, full stroke 15-20 millisecondi mentre gli SSD hanno un tempo di accesso di 100 microsecondi
 - quante configurazioni con n bit e intervalli rappresentabili nelle diverse codifiche
 - parallelismo nel chip
->Multi-thread; ossia nella stessa CPU vengono elaborati contemporaneamente piu di un processo, come se esistessero due chip virtuali, a livello di istruzioni; pipeling e architetture supercalari, MUlti-core, core eterogenei nei chip 
+>Multi-thread; ossia nella stessa CPU vengono elaborati contemporaneamente piu di un processo, come se esistessero due chip virtuali, a livello di istruzioni; pipeling e architetture supercalari, MUlti-core: vero mutli-threading, core eterogenei nei chip 
 - clock\periodo di clock\frequenza di clock
 > T clock = 1 /frequenza => frequenza = 1/T clock 
 - distanza di hamming e uso per identificare\correggere errori
+>La distanza di Hamming identifica il numero di bit che devo cambiare ad una WORD per renderla equivalente ad un'altra, nel codice di correzioni degli errori viene usato un bit di parità supplementare per il conto degli 1 nel numero in formato binario, questo bit vale 1 o 0 a seconda della quantità pari o dispari di 1, da qui si può correggere una parola sbagliata entro una distanza di hamming 2, cioè errori pari aa 1 bit 
 - Legge di Moore
 >Ogni 18 mesi la dimensione dei transistor si dimezza, perciò ne aumenta del doppio la quantità collocabile entro la stessa area
 - Arbitraggio del bus: dare una definizione e discutere le principali differenze tra arbitraggio centralizzato e distribuito
