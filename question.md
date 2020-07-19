@@ -58,7 +58,7 @@ esprimendo il risultato in nanosecondi.
 
 - 0xc3ec1000
 da esadecimale a decimale in IEEE754
->ris: 1100 0011 1110 1100 0001 0000 0000 0000
+>ris: -472.125
 
 - Siano A = (a_1 a_0) e B = (b_1 b_0) due numeri binari (con a_1 e b_1 bit più significativi); si consideri la funzione booleana F(A,B) che è vera se (A and (not B)) 
 è un numero maggiore di 1 (and e not sono operatori bit a bit). Si scriva la tabella di verità di F, 
@@ -70,7 +70,8 @@ tale nuova CPU è in grado di eseguire P in 150ns.
 Sapendo che il fattore di accelerazione è a=2, si calcoli la percentuale di istruzioni accelerate p rispetto al totale di quelle contenute nel programma P.
 >ris: 50%
 
-- ((A+BC(X+Z)(ABX)+D) + 1 ) (ACD+AD+BA+DAB) NULL
+- ((A+BC(X+Z)(ABX)+D) + 1 ) 
+>(ACD+AD+BA+DAB) NULL
 ((1 ) (ACD+AD+BA+DAB) Identità
 (ACD+AD+BA+DAB) Raccoglimento (distributiva)
 (A(CD+D+B+DB)) assorbimento
@@ -79,6 +80,8 @@ Sapendo che il fattore di accelerazione è a=2, si calcoli la percentuale di ist
 
 - Sia B = b3 b2 b1 b0 un numero binario (con b3 bit di peso maggiore) e si consideri la funzione booleana F(B) che è vera se B è un numero primo 
 (si ricordi che 0 e 1 non sono numeri primi). Si scriva la tabella di verità di F e si determini la corrispondente espressione booleana.
+>ris_ __A__ __B__ C __D__ + __A__ __B__ C D +__A__ B __C__ D +__A__ B C D +A __B__ C D +A B __C__ D 
+sempl:  __B__ C(__A__ +D) + B D __A__ 
 
 - Calcolare il tempo impiegato da una CPU operante a 4GHz per eseguire un frammento di programma composto da: 7 istruzioni di tipo A, 9 di tipo B e 4 di tipo C, 
 sapendo che i tre tipi di istruzioni richiedono rispettivamente 10, 20 e 30 cicli di datapath
@@ -97,32 +100,36 @@ Sapendo che il tempo totale di lettura delle parole è di 1230ns, determinare il
 >ris: 30 s 
 
 - Si trasformi in formato IEEE 754 singola precisione il seguente numero: -111.25
->ris: C2EF4000h 
+>ris: C2de8000h
 
 - A(BAD+A+ADB’)(C(A’B’C’+(C’+D)+1))
+>ris: A C 
 
 - Si converta in base 10 il numero rappresentato in formato IEEE754 singola precisione da: 
 43800000h
->ris: 0100 0011 1000 0000 0000 0000 0000 0000 
+>ris: 256.0
 
 - Siano A = (a1 a0) e B = (b1 b0) due numeri binari (con a1 e b1 bit più significativi); si consideri la funzione booleana F(A,B) che è vera se (A-B) è un numero positivo e primo. 
-Si scriva la tabella di verità di F e si determini la corrispondente espressione booleana
+Si scriva la tabella di verità di F e si determini la corrispondente espressione booleana 
+>ris: A __C__ (B + __D__ )
 
 - 0x44e1f000 (probabilmente conversione in decimale, partendo da numero esadecimale IEEE 754)
->ris: 0100 0100 1110 0001 1111 0000 0000 0000
+>ris: +1807.5
 
 - Su una CPU, un algoritmo che necessita di 20.000 istruzioni viene eseguito in 10 secondi. 
 Sapendo che la percentuale di istruzioni in virgola mobile dell’algoritmo è 60% e che si vuole sostituire l’unità che esegue le operazioni in virgola mobile con una più veloce, 
 calcolare quanto dovrebbe essere il fattore di accelerazione della nuova unità affinché il tempo di esecuzione dell’intero algoritmo dimezzi.
+> ris: 6  
 
 - Si converta in base 10 il numero rappresentato in formato IEEE754 singola precisione da: 
 449a4000h
+>ris: +1234
 
 - Si consideri un calcolatore dotato di una cache a 2 livelli. Il tempo di accesso a una parola è di 5ns per la cache di primo livello e 30ns per la RAM. Durante l’esecuzione di un programma, 20 parole sono lette dalla RAM, 12 dalla cache di primo livello e 18 parole sono lette dalla cache di secondo livello. Sapendo che il tempo totale di lettura delle parole è di 1230ns, determinare il tempo di accesso alla cache di secondo livello.
+>ris: 10 ns 
 
-- Sia B = b3 b2 b1 b0 un numero binario (con b3 bit di peso maggiore) e si consideri la funzione booleana F(B) che è vera se B non è un numero primo. Si scriva la tabella di verità di F e si determini la corrispondente espressione booleana.
 - (C(A’B’C’+(C’+D)+1)) (BAD+A+ADB’) 
-- Si converta in base 10 il numero rappresentato in formato IEEE754 singola precisione da: 449a4000h
+>ris: A C 
 
 Domande 
 ===
