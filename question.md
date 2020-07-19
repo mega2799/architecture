@@ -252,6 +252,7 @@ Domande
 - ordini di grandezza nei tempi di lettura delle memorie e hard disk
 >Hard disk; average seek 8-10 millisecondi, track to track 2 millisecondi, full stroke 15-20 millisecondi mentre gli SSD hanno un tempo di accesso di 100 microsecondi
 - quante configurazioni con n bit e intervalli rappresentabili nelle diverse codifiche
+> con n bit sono rappresentabili 2^n configurazioni
 - parallelismo nel chip
 >Multi-thread; ossia nella stessa CPU vengono elaborati contemporaneamente piu di un processo, come se esistessero due chip virtuali, a livello di istruzioni; pipeling e architetture supercalari, MUlti-core: vero mutli-threading, core eterogenei nei chip 
 - clock\periodo di clock\frequenza di clock
