@@ -1,7 +1,9 @@
 Esercizi
 ===
-x = 0 y = 8
+x = 0 y = 8 (numeri matricola usati)
 ---
+<br>
+
 - Una cisterna è dotata di 4 pompe: PA e PB riempiono la cisterna, PC e PD la svuotano. Sapendo che la capacità delle pompe è rispettivamente di 7, 5, 8 e 4 litri/secondo
 si indichi (tramite tabella di verità) per quali configurazioni di pompe accese la vasca si riempirà. Si scriva la tavola di verità e si derivi
 la corrispondente espressione booleana.
